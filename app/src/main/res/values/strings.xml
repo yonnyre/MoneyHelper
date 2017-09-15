@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MoneyHelper</string>
+    <string-array name="android_layout_arrays">
+        <item >Tarjeta de Credito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </string-array>
+    <string></string>
+</resources>

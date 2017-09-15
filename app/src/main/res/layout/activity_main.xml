@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yonny.moneyhelper.MainActivity">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contabilidad de Ingresos / Egresos"
+        android:layout_margin="12dp"
+        android:textSize="20dp"
+        android:textColor="#111111"
+            android:id="@+id/textView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="75dp"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Actual Ahorro"
+        android:layout_marginTop="15dp"
+
+        android:textSize="20dp"
+        android:textColor="#111111"
+        />
+
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Actual Credito"
+        android:layout_marginTop="45dp"
+        android:textSize="20dp"
+        android:textColor="#111111"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Actual Efectivo"
+        android:layout_marginTop="45dp"
+        android:textSize="20dp"
+        android:textColor="#111111"
+        />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="78dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/saldoAhorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.44"
+            android:text="S/.0.0"
+            android:textColor="#111111"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="145dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/.0.0"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/saldoCredito"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="213dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/.0.0"
+            android:id="@+id/saldoEfectivo"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#111111"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proporcion Ingresos / Egresos"
+        android:layout_marginTop="309dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#111111"
+        android:id="@+id/textView2" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressbar1 "
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:progressDrawable="@drawable/bar"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="addItem"
+        android:src="@android:drawable/ic_menu_add"
+        app:backgroundTint="@android:color/background_dark" />
+
+
+
+
+</RelativeLayout>

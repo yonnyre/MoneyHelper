@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yonny.moneyhelper.Main2Activity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Ingresos / Egresos"
+        android:layout_margin="12dp"
+        android:textSize="20dp"
+        android:textColor="#111111"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textInputLayout"
+       >
+
+        <EditText
+            android:id="@+id/editext1"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Monto"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#111111"
+            android:textColorHint="#111111"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="radioButtonClicked"
+        android:textSize="15dp"
+        android:text=" Ingreso" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:onClick="radioButtonClicked"
+        android:layout_marginLeft="30dp"
+        android:text=" Egreso" />
+    </RadioGroup>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="70dp"
+      android:orientation="vertical"
+      android:layout_marginLeft="15dp"
+      android:layout_below="@+id/textInputLayout"
+      android:layout_alignParentEnd="true">
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:fontFamily="sans-serif"
+          android:text="Tipo de Cuenta"
+          android:textAllCaps="true"
+          android:textStyle="bold" />
+
+      <Spinner
+          android:id="@+id/spinner"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:entries="@array/android_layout_arrays"
+          android:padding="5dp"
+          android:layout_marginTop="25dp"/>
+
+
+      <Button
+          android:onClick="register"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Registrar"
+          android:layout_marginTop="55dp"
+          android:layout_margin="55dp"
+          />
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>
